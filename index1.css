@@ -3,22 +3,22 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-body {
+ }
+ body {
     --color1: #C3C6B1 ;
     background-color: #F5F5F5;
     width: auto;
     max-width: 1500px;
     word-wrap: break-word;
-}
+ }
 
-header {
+ header {
     background-color: #f1f1f1;
     padding: 20px;
     text-align: center;
     padding: 20px;
     background-color: #F5F5F5;
-    height: 690px; /* Højde på forsidebillede */
+    height: 690px; 
     background-image: url('FORSIDE.html.jpg'); 
     background-position: center;
     background-size: cover;
@@ -28,7 +28,7 @@ header {
 
   /* MENUBAR */
   
-.nav-bar {
+ .nav-bar {
     font-size: 23px;
     font-family: 'Ysabeau', sans-serif;
     width: 100%;
@@ -39,12 +39,16 @@ header {
     position: relative;
     background-color: var(--color2);
     padding: 12px 20px;
-}
+ }
 
-.logo img {width: 56px;}
-.menu {display: flex;}
-.menu li {padding-left: 30px;}
-.menu li a {
+ .logo img {width: 56px;}
+ .menu {display: flex;}
+
+ .menu li {
+  padding-left: 30px;
+  list-style: none;
+ }
+ .menu li a {
     display: inline-block;
     text-decoration: none;
     color: var(--color1);
@@ -52,9 +56,9 @@ header {
     transition: 0.15s ease-in-out;
     position: relative;
     text-transform: uppercase;
-}
+ }
 
-.menu li a::after {
+ .menu li a::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -64,26 +68,29 @@ header {
     height: 1px;
     background-color: var(--color1);
     transition: 0.2s ease-in-out;
-}
-.menu li a:hover:after {width: 100%;}
-.open-menu , .close-menu {
+ }
+
+ .menu li a:hover:after {width: 100%;}
+ .open-menu , .close-menu {
     position: absolute;
     color: var(--color1);
     cursor: pointer;
     font-size: 1.5rem;
     display: none;
-}
-.open-menu {
+ }
+
+ .open-menu {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-}
-.close-menu {
+ }
+
+ .close-menu {
     top: 20px;
     right: 20px;
-}
+ }
 
-.container {
+ .container {
     width: 100%;
     max-width: 11cm;
     margin-top: 20%;
@@ -105,9 +112,9 @@ header {
     color: #606060;
   }
 
-#check {display: none;}
+ #check {display: none;}
 
-@media(max-width: 610px){
+ @media(max-width: 610px){
     .menu {
         flex-direction: column;
         align-items: center;
@@ -175,7 +182,6 @@ header {
     padding: 20px;
   }
 
-
  .about-me-text {
     width: 60%;
     background-color: #F5F5F5;
@@ -209,6 +215,7 @@ header {
     margin-top: 50px;
     margin-bottom: 25px;
  }
+
  .kompetencer {
     display: flex;
   }
@@ -221,8 +228,7 @@ header {
     justify-content: center;
     align-items: center;
     box-shadow: 0 1px 1px 0 rgba(91, 90, 90, 0.2), 0 2px 10px 0 rgba(158, 153, 153, 0.19);
-     
- }
+  }
 
  .box2 {
     background-color: #C3C6B1;
@@ -245,17 +251,17 @@ header {
  }
 
  #kompetencersektion h3 {
-    color: white; /* Ændr farven efter behov */
-    font-size: 25px; /* Ændr størrelsen efter behov */
-    margin-bottom: 8px; /* Ændr margenen efter behov */
+    color: white; 
+    font-size: 25px; 
+    margin-bottom: 8px; 
     text-align: center;
     font-family: 'Ysabeau', sans-serif;
   }
   
   #kompetencersektion p {
-    color: white; /* Ændr farven efter behov */
-    font-size: 16px; /* Ændr størrelsen efter behov */
-    margin-bottom: 16px; /* Ændr margenen efter behov */
+    color: white; 
+    font-size: 16px; 
+    margin-bottom: 16px; 
     font-family: 'Ysabeau', sans-serif;
   }
   
@@ -436,12 +442,11 @@ header {
     }
   
     .contact-info img {
-      order: -1; /* Ændrer rækkefølgen af billedet til at komme før tekstboksene */
+      order: -1; 
     }
   }
 
-
-
+  /* FOOTER STARTER HER. */
 
  footer {
     width: auto;
@@ -457,12 +462,12 @@ header {
     color: #606060;
     font-size: 18px;
     text-transform: capitalize;
-    margin-bottom: 15px; /* Reduceret afstand fra h4-elementet */
+    margin-bottom: 15px; 
     position: relative;
   }
   
   .footerikoner ul li:not(:last-child) {
-    margin-bottom: 5px; /* Reduceret afstand mellem ikonerne */
+    margin-bottom: 5px; 
   }
   
   .footerikoner .social-links a {
@@ -470,7 +475,7 @@ header {
     height: 40px;
     width: 40px;
     background-color: #F5F5F5;
-    margin: 0 5px; /* Reduceret mellemrum mellem ikonerne */
+    margin: 0 5px; 
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
